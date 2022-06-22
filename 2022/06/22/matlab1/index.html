@@ -18,14 +18,14 @@
   
     <meta name="description" content="变量名命名规范、保存和加载文件及数据等。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MATLAB Onramp（一）">
+<meta property="og:title" content="MATLAB Onramp（一）——基本命令">
 <meta property="og:url" content="http://example.com/2022/06/22/matlab1/index.html">
 <meta property="og:site_name" content="我的博客">
 <meta property="og:description" content="变量名命名规范、保存和加载文件及数据等。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/matlab.jpg">
 <meta property="article:published_time" content="2022-06-22T06:10:50.000Z">
-<meta property="article:modified_time" content="2022-06-22T07:35:04.441Z">
+<meta property="article:modified_time" content="2022-06-22T10:37:14.147Z">
 <meta property="article:author" content="Cdragon">
 <meta property="article:tag" content="matlab">
 <meta name="twitter:card" content="summary_large_image">
@@ -33,7 +33,7 @@
   
   
   
-  <title>MATLAB Onramp（一） - 我的博客</title>
+  <title>MATLAB Onramp（一）——基本命令 - 我的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -198,7 +198,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="MATLAB Onramp（一）"></span>
+            <span id="subtitle" data-typed-text="MATLAB Onramp（一）——基本命令"></span>
           
         </div>
 
@@ -221,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          232 字
+          253 字
         
       </span>
     
@@ -232,7 +232,7 @@
         
         
         
-          2 分钟
+          3 分钟
         
       </span>
     
@@ -270,37 +270,35 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">MATLAB Onramp（一）</h1>
+            <h1 style="display: none">MATLAB Onramp（一）——基本命令</h1>
             
             <div class="markdown-body">
               
-              <h1 id="变量名命名规范"><a href="#变量名命名规范" class="headerlink" title="变量名命名规范"></a>变量名命名规范</h1><p>字母开头，只包含字母、数字或下划线。</p>
-<h1 id="保存和加载文件、数据"><a href="#保存和加载文件、数据" class="headerlink" title="保存和加载文件、数据"></a>保存和加载文件、数据</h1><h2 id="保存文件"><a href="#保存文件" class="headerlink" title="保存文件"></a>保存文件</h2><figure><div class="code-wrapper"><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token comment">%保存文件为datafile.mat</span>
+              <h1 id="MATLAB-Onramp（一）——基本命令"><a href="#MATLAB-Onramp（一）——基本命令" class="headerlink" title="MATLAB Onramp（一）——基本命令"></a>MATLAB Onramp（一）——基本命令</h1><h2 id="变量名命名规范"><a href="#变量名命名规范" class="headerlink" title="变量名命名规范"></a>变量名命名规范</h2><p>字母开头，只包含字母、数字或下划线。</p>
+<h2 id="保存和加载文件、数据"><a href="#保存和加载文件、数据" class="headerlink" title="保存和加载文件、数据"></a>保存和加载文件、数据</h2><h3 id="保存文件"><a href="#保存文件" class="headerlink" title="保存文件"></a>保存文件</h3><figure><div class="code-wrapper"><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token comment">%保存文件为datafile.mat</span>
 save datafile
 <span class="token comment">%只保存单个数据</span>
 save justk k<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
 
-<h2 id="加载文件"><a href="#加载文件" class="headerlink" title="加载文件"></a>加载文件</h2><figure><div class="code-wrapper"><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token comment">%加载myData.mat</span>
+<h3 id="加载文件"><a href="#加载文件" class="headerlink" title="加载文件"></a>加载文件</h3><figure><div class="code-wrapper"><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token comment">%加载myData.mat</span>
 load myData
 <span class="token comment">%从myData.mat中加载变量k</span>
 load myData k<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
 
-<h2 id="清除数据"><a href="#清除数据" class="headerlink" title="清除数据"></a>清除数据</h2><figure><div class="code-wrapper"><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token comment">%清除工作区中的数据</span>
+<h3 id="清除数据"><a href="#清除数据" class="headerlink" title="清除数据"></a>清除数据</h3><figure><div class="code-wrapper"><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token comment">%清除工作区中的数据</span>
 clear
 <span class="token comment">%清屏</span>
 clc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
 
-<h1 id="调用内部函数或常数"><a href="#调用内部函数或常数" class="headerlink" title="调用内部函数或常数"></a>调用内部函数或常数</h1><figure><div class="code-wrapper"><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">x <span class="token operator">=</span> <span class="token keyword">pi</span><span class="token operator">/</span><span class="token number">2</span>
+<h2 id="调用内部函数或常数"><a href="#调用内部函数或常数" class="headerlink" title="调用内部函数或常数"></a>调用内部函数或常数</h2><figure><div class="code-wrapper"><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">x <span class="token operator">=</span> <span class="token keyword">pi</span><span class="token operator">/</span><span class="token number">2</span>
 y <span class="token operator">=</span> <span class="token function">sin</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
 z <span class="token operator">=</span> <span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">9</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div></figure>
 
-<h1 id="改变数据显示格式"><a href="#改变数据显示格式" class="headerlink" title="改变数据显示格式"></a>改变数据<em>显示</em>格式</h1><figure><div class="code-wrapper"><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">format long
+<h2 id="改变数据显示格式"><a href="#改变数据显示格式" class="headerlink" title="改变数据显示格式"></a>改变数据<em>显示</em>格式</h2><figure><div class="code-wrapper"><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">format long
 x
 
 format short
 x<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
-
-
               
             </div>
             <hr/>
@@ -344,7 +342,7 @@ x<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><s
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>MATLAB Onramp（一）</div>
+      <div>MATLAB Onramp（一）——基本命令</div>
       <div>http://example.com/2022/06/22/matlab1/</div>
     </div>
     <div class="license-meta">
