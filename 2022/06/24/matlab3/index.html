@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/matlab.jpg">
 <meta property="article:published_time" content="2022-06-24T02:15:00.000Z">
-<meta property="article:modified_time" content="2022-06-24T02:16:29.132Z">
+<meta property="article:modified_time" content="2022-06-24T02:39:46.531Z">
 <meta property="article:author" content="Cdragon">
 <meta property="article:tag" content="matlab">
 <meta name="twitter:card" content="summary_large_image">
@@ -192,7 +192,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/genshin3.jpeg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/genshin3.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -221,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          25 字
+          1.1k 字
         
       </span>
     
@@ -232,7 +232,7 @@
         
         
         
-          1 分钟
+          10 分钟
         
       </span>
     
@@ -274,7 +274,22 @@
             
             <div class="markdown-body">
               
-              <h1 id="MATLAB-Onramp（三）——数组和矩阵的索引"><a href="#MATLAB-Onramp（三）——数组和矩阵的索引" class="headerlink" title="MATLAB Onramp（三）——数组和矩阵的索引"></a>MATLAB Onramp（三）——数组和矩阵的索引</h1>
+              <h1 id="MATLAB-Onramp（三）——数组和矩阵的索引"><a href="#MATLAB-Onramp（三）——数组和矩阵的索引" class="headerlink" title="MATLAB Onramp（三）——数组和矩阵的索引"></a>MATLAB Onramp（三）——数组和矩阵的索引</h1><h2 id="数组和矩阵的索引"><a href="#数组和矩阵的索引" class="headerlink" title="数组和矩阵的索引"></a>数组和矩阵的索引</h2><p>索引从 <strong>1</strong> 开始，<code>end</code>表示最后一行&#x2F;列。</p>
+<p>二维矩阵如果用一个元素索引，则是按列排序。</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">load datafile
+data
+
+x <span class="token operator">=</span> <span class="token function">data</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span>
+
+y <span class="token operator">=</span> <span class="token function">data</span><span class="token punctuation">(</span><span class="token keyword">end</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span>
+
+z <span class="token operator">=</span> <span class="token function">data</span><span class="token punctuation">(</span><span class="token keyword">end</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span>
+
+m <span class="token operator">=</span> <span class="token function">data</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
+
+<p><strong>结果：</strong></p>
+<p>$$<br>\begin{array}{cc|cc}<br>    \mathrm{data} &#x3D; \left[\begin{array}{rrrr}<br>        {\color{red}[1]}3.0000 &amp; {\color{red}[8]}0.5300 &amp; {\color{red}[15]}4.0753 &amp; {\color{red}[22]}NaN\<br>        {\color{red}[2]}18.0000 &amp; {\color{red}[9]}1.7800 &amp; {\color{red}[16]}6.6678 &amp; {\color{red}[23]}2.1328\<br>        {\color{red}[3]}19.0000 &amp; {\color{red}[10]}0.8600 &amp; {\color{red}[17]}1.5177 &amp; {\color{red}[24]}3.6852\<br>        {\color{red}[4]}20.0000 &amp; {\color{red}[11]}1.6000 &amp; {\color{red}[18]}3.6375 &amp; {\color{red}[25]}8.5389\<br>        {\color{red}[5]}21.0000 &amp; {\color{red}[12]}3.0000 &amp; {\color{red}[19]}4.7243 &amp; {\color{red}[26]}10.1570\<br>        {\color{red}[6]}23.0000 &amp; {\color{red}[13]}6.1100 &amp; {\color{red}[20]}9.0698 &amp; {\color{red}[27]}2.8739\<br>        {\color{red}[7]}38.0000 &amp; {\color{red}[14]}2.5400 &amp; {\color{red}[21]}5.3002 &amp; {\color{red}[28]}4.4508<br>    \end{array}\right] &amp; \quad &amp; \quad<br>    \begin{array}{l}<br>        x &#x3D; 9.0698\<br>        y &#x3D; 5.3002\<br>        z &#x3D; 9.0698\<br>        m &#x3D; 6.6678<br>    \end{array}<br>\end{array}<br>$$</p>
+
               
             </div>
             <hr/>
